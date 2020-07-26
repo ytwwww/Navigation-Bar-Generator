@@ -1,0 +1,20 @@
+{
+  "name": "js-library-wangyatz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "NavigationBarGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csc309-summer-2020/js-library-wangyatz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csc309-summer-2020/js-library-wangyatz/issues"
+  },
+  "homepage": "https://github.com/csc309-summer-2020/js-library-wangyatz#readme"
+}
