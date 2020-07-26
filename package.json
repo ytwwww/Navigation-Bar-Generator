@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/csc309-summer-2020/js-library-wangyatz/issues"
   },
-  "homepage": "https://github.com/csc309-summer-2020/js-library-wangyatz#readme"
+  "homepage": "https://github.com/csc309-summer-2020/js-library-wangyatz#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
