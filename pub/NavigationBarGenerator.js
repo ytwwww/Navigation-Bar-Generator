@@ -1,8 +1,10 @@
 function NavigationBarGenerator() {
-	this.bars = [];
+	this.bar = null;
 	this.leftItems = [];
 	this.middleItems = [];
 	this.rightItems = [];
+
+	// remove margin of body
     const body = document.querySelector("body");
     body.style = "margin: 0px";
 }
@@ -15,8 +17,6 @@ NavigationBarGenerator.prototype = {
 
         const body = document.querySelector("body");
 		body.prepend(bar);
-		this.bars.push(bar);
-		this.position = "Top";
         this.bar = bar;
 
         const centerDiv = document.createElement("div");
@@ -52,7 +52,7 @@ NavigationBarGenerator.prototype = {
 
 	makeLeftBar: function() {
         const bar = document.createElement("div");
-        bar.className = "NavigationBarGenerator-LeftBar";
+        bar.className = "NavigationBarGenerator-leftBar";
         const spacer = document.createElement("div");
         spacer.className = "NavigationBarGenerator-leftSpacer";
 		const body = document.querySelector("body");
@@ -73,16 +73,9 @@ NavigationBarGenerator.prototype = {
 		this.bar = bar;
 	},
 
-	changeBarColor: function(color) {
-		this.bar.style.backgroundColor = color;
-    },
-
-    changeHoverColor: function(color) {
-    },
-
-    changeTextColor: function(color) {
-    },
-
+	// Adds an item/button to the navbar
+	// position: "L" (left), "M" (middle), or "R" (right), specifying where to insert the new item.
+	// If position is not provided, the item will be inserted to left.
 	addItem: function(name, address, position) {
 		const link = document.createElement("a");
 		link.innerText = name;
@@ -101,13 +94,30 @@ NavigationBarGenerator.prototype = {
 		}
 	},
 
+	addSearchField: function(position) {
+	},
+
+	addMinimizeButton: function(position) {
+	},
+
+	// function to space all buttons on the bar equally, should only be called when all items are added (as left).
 	spaceEqually: function() {
         const percentage = 100 / (this.leftItems.length);
         this.leftItems.forEach((item) => {
             item.style = "padding-left: 0px; padding-right: 0px;"
             item.style.width = percentage + "%";
         });
-	}
+	},
+
+	changeBarColor: function(color) {
+		this.bar.style.backgroundColor = color;
+    },
+
+    changeHoverColor: function(color) {
+    },
+
+    changeTextColor: function(color) {
+    },
 }
 
 

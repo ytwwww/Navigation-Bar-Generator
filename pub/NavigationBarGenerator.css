@@ -29,7 +29,7 @@
     background-color: Gainsboro;
 }
 
-.NavigationBarGenerator-LeftBar {
+.NavigationBarGenerator-leftBar {
     min-width: 50px;
     position: fixed;
     left: 0px;
