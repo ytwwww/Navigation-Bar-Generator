@@ -117,7 +117,10 @@ NavigationBarGenerator.prototype = {
     },
 
     changeTextColor: function(color) {
-    },
+	},
+	
+	changeTextFont: function(font) {
+	},
 }
 
 
