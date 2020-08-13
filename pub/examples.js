@@ -1,6 +1,6 @@
 const topNav = new NavigationBarGenerator();
 topNav.makeTopBar();
-topNav.addItem("Outerwear", "");
+topNav.addItem("Outerwear", "./examples2.html");
 topNav.addItem("Swimwear", "");
 topNav.addItem("Activewear", "");
 topNav.addItem("Sleepwear", "");
@@ -18,9 +18,3 @@ bottomNav.addItem("Shopping Cart", "", "R");
 bottomNav.addItem("My Account", "", "R");
 bottomNav.addItem("Clearence", "");
 bottomNav.changeBarColor("Lavender");
-
-// const c = new NavigationBarGenerator();
-// c.makeLeftBar();
-
-// const d = new NavigationBarGenerator();
-// d.makeRightBar();
