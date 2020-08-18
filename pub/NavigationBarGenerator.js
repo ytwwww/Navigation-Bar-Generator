@@ -95,6 +95,12 @@ NavigationBarGenerator.prototype = {
 	},
 
 	addSearchField: function(position) {
+		const input = document.createElement("input");
+		input.type = "text";
+		input.placeholder = "Search";
+		input.className = "NavigationBarGenerator-btns";
+		this.rightItems.push(input);
+		document.querySelector("." + this.bar.className + " .NavigationBarGenerator-rightGroup").append(input);
 	},
 
 	addMinimizeButton: function(position) {
@@ -102,9 +108,10 @@ NavigationBarGenerator.prototype = {
 
 	// function to space all buttons on the bar equally, should only be called when all items are added (as left).
 	spaceEqually: function() {
-        const percentage = 100 / (this.leftItems.length);
-        this.leftItems.forEach((item) => {
-            item.style = "padding-left: 0px; padding-right: 0px;"
+		const allItems = this.leftItems.concat(this.middleItems).concat(this.rightItems);
+		const percentage = 100 / (allItems.length);
+		console.log(percentage);
+        allItems.forEach((item) => {
             item.style.width = percentage + "%";
         });
 	},

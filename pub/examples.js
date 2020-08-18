@@ -6,6 +6,7 @@ topNav.addItem("Activewear", "");
 topNav.addItem("Sleepwear", "");
 topNav.addItem("Shoes", "");
 topNav.addItem("Bags", "");
+topNav.addSearchField();
 topNav.spaceEqually();
 
 const bottomNav = new NavigationBarGenerator();
@@ -17,4 +18,5 @@ bottomNav.addItem("Return Policy", "", "M");
 bottomNav.addItem("Shopping Cart", "", "R");
 bottomNav.addItem("My Account", "", "R");
 bottomNav.addItem("Clearence", "");
+bottomNav.addSearchField();
 bottomNav.changeBarColor("Lavender");
