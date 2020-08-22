@@ -4,7 +4,7 @@
 https://navigation-bar-generator.herokuapp.com/
 
 ## Getting Started
-Include the following two line inside the meta tag in your HTML file.
+Include the following two lines inside the meta tag in your HTML file.
 ```
 <script defer type="text/javascript" src="path/to/NavigationBarGenerator.js"></script>
 <link rel="stylesheet" type="text/css" href="path/to/NavigationBarGenerator.css">
