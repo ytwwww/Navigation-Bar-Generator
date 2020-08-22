@@ -7,6 +7,7 @@ function nav() {
     bar.addItem("Horizontal Bars Examples", "./horizontal.html");
     bar.addItem("Vertical Bars Examples", "./vertical.html");
     bar.spaceEqually();
+    bar.changeBarColor("bisque");
 }
 
 nav();
