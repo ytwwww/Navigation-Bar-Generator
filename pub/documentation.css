@@ -1,0 +1,19 @@
+body {
+    background-color: Azure;
+}
+
+#textCode {
+    width: 80%;
+    font-size: larger;
+    display: block;
+}
+
+#content {
+    margin-left: 15%;
+    font-family: Arial;
+}
+
+h3 a {
+    color: grey;
+    text-decoration: none;
+}

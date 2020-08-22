@@ -1,8 +1,36 @@
-const c = new NavigationBarGenerator();
-c.makeLeftBar();
+"use strict"; 
 
-const d = new NavigationBarGenerator();
-d.makeRightBar();
+function leftBarExample() {
+    const leftBar = new NavigationBarGenerator();
+    leftBar.makeLeftBar();
+
+    leftBar.addItem("Btn01", "", "L");
+    leftBar.addItem("Btn02", "", "L");
+    leftBar.addItem("Btn03", "", "L");
+
+    leftBar.addItem("Btn11", "", "M");
+    leftBar.addItem("Btn12", "", "M");
+    leftBar.addItem("Btn13", "", "M");
+
+    leftBar.addItem("Btn21", "", "R");
+    leftBar.addItem("Btn22", "", "R");
+    leftBar.addItem("Btn23", "", "R");
+}
+
+function rightBarExample() {
+    const rightBar = new NavigationBarGenerator();
+    rightBar.makeRightBar();
+
+    rightBar.addItem("Btn1", "", "");
+    rightBar.addItem("Btn2", "", "");
+    rightBar.addItem("Btn3", "", "");
+    rightBar.spaceEqually();
+}
+
+leftBarExample();
+rightBarExample();
+
+
 
 // make it mobile-unfriendly.
 // If I zoomed in more than 175%, the text on the buttons will overlap.

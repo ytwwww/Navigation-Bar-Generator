@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>Documentation</title>
+    <script defer type="text/javascript" src="libary/NavigationBarGenerator.js"></script>
+    <script defer type="text/javascript" src="documentation.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+    <link rel="stylesheet" type="text/css" href="libary/NavigationBarGenerator.css">
+ </head>
+ <body>
+    <div id="content">
+      <h1>Navigation Bar Generator API Methods</h1>
+      <br/>
+      <h2>Getting Started</h2>
+      <code><textarea rows="8" disabled id="textCode">
+         &#10;
+         <script defer type="text/javascript" src="path/to/NavigationBarGenerator.js"></script>&#10;
+         <link rel="stylesheet" type="text/css" href="path/to/NavigationBarGenerator.css">&#10;
+      </textarea></code>
+      <br/>
+      <h2>Constructor</h2>
+      <code><textarea rows="5" disabled id="textCode">
+         &#10;
+         const nb = new NavigationBarGenerator();&#10;
+      </textarea></code>
+      <br/>
+      
+      <h2>Initialize an Empty Navigation Bar (Choose one from top, bottom, left, right)</h2>
+      <code><textarea rows="12" disabled id="textCode">
+         &#10;
+         nb.makeTopBar();&#10;
+         nb.makeBottomBar();&#10;
+         nb.makeLeftBar();&#10;
+         nb.makeRightBar();&#10;
+      </textarea></code>
+      <br/>
+
+      <h2>Add Buttons</h2>
+      <h3>nb.addItem(text, address, position)</h3>
+      <h3>position takes "L" (for left or top group), "M" (for middle group), "R" (for right group), or empty.</h3>
+      <code><textarea rows="12" disabled id="textCode">
+         &#10;
+         nb.addItem("Google", "https://www.google.com/");&#10;
+         nb.addItem("Google", "https://www.google.com/", "L");&#10;
+         nb.addItem("Google", "https://www.google.com/", "M");&#10;
+         nb.addItem("Google", "https://www.google.com/", "R");&#10;
+      </textarea></code>
+      <br/>
+
+      <h2>Add a Search Field</h2>
+      <code><textarea rows="5" disabled id="textCode">
+         &#10;
+         nb.addSearchField();&#10;
+      </textarea></code>
+      <br/>
+      
+      <h2>Customize Looks</h2>
+      <h3>Change color of bar</h3>
+      <code><textarea rows="5" disabled id="textCode">
+         &#10;
+         nb.changeBarColor("Red");&#10;
+      </textarea></code>
+      <br/>
+
+      <h3>Change color of buttons when hovered</h3>
+      <code><textarea rows="5" disabled id="textCode">
+         &#10;
+         nb.changeHoverColor("Blue");&#10;
+      </textarea></code>
+      <br/>
+
+      <h3>Change color of text in buttons</h3>
+      <code><textarea rows="5" disabled id="textCode">
+         &#10;
+         nb.changeTextColor("Gray");&#10;
+      </textarea></code>
+      <br/>
+
+      <h3>Change font of text in buttons</h3>
+      <code><textarea rows="5" disabled id="textCode">
+         &#10;
+         nb.changeTextFont("Arial");&#10;
+      </textarea></code>
+      <br/>
+
+    </div>
+ </body>
+</html>

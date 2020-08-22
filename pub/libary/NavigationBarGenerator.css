@@ -11,12 +11,7 @@
 
 .NavigationBarGenerator-btns:hover {
     background-color: AliceBlue;
-}
-
-input[type=text] {
-    float: right;
-    width: 20%;
-    border: none;
+    font-weight: bold;
 }
 
 .NavigationBarGenerator-topBar {
@@ -25,7 +20,8 @@ input[type=text] {
     top: 0px;
     width: 100%;
     background-color: Gainsboro;
-    margin-bottom: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .NavigationBarGenerator-bottomBar {
@@ -34,22 +30,27 @@ input[type=text] {
     bottom: 0px;
     width: 100%;
     background-color: Gainsboro;
+    overflow: hidden;
 }
 
 .NavigationBarGenerator-leftBar {
     min-width: 50px;
     position: fixed;
+    top: 0px;
     left: 0px;
     height: 100%;
     background-color: Gainsboro;
+    overflow: hidden;
 }
 
-.NavigationBarGenerator-RightBar {
+.NavigationBarGenerator-rightBar {
     min-width: 50px;
     position: fixed;
+    top: 0px;
     right: 0px;
     height: 100%;
     background-color: Gainsboro;
+    overflow: hidden;
 }
 
 .NavigationBarGenerator-bottomSpacer {
@@ -82,4 +83,30 @@ input[type=text] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.NavigationBarGenerator-bottomGroup {
+    float: none;
+    position: absolute;
+    bottom: 0%;
+}
+
+.NavigationBarGenerator-topBar input[type=text] {
+    width: 100px;
+    border: none;
+}
+
+.NavigationBarGenerator-bottomBar input[type=text] {
+    width: 100px;
+    border: none;
+}
+
+.NavigationBarGenerator-leftBar input[type=text] {
+    width: 100px;
+    border: none;
+}
+
+.NavigationBarGenerator-rightBar input[type=text] {
+    width: 100px;
+    border: none;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>Horizontal Bars Examples</title>
+    <script defer type="text/javascript" src="libary/NavigationBarGenerator.js"></script>
+    <script defer type="text/javascript" src="horizontal.js"></script>
+    <link rel="stylesheet" type="text/css" href="libary/NavigationBarGenerator.css">
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+ </head>
+ <body>
+  <div id="content">
+    <h3><a href="./index.html">&lt Back To Landing Page</a></h2>
+    <br/>
+    <h1>Code for Top Navigation Bar</h1>
+    <code><textarea rows="34" disabled id="textCode">
+      &#10;
+      const topNav = new NavigationBarGenerator();&#10;
+      topNav.makeTopBar();&#10;&#10;
+
+      topNav.addItem("Outerwear", "");&#10;
+      topNav.addItem("Swimwear", "");&#10;
+      topNav.addItem("Activewear", "");&#10;
+      topNav.addItem("Sleepwear", "");&#10;
+      topNav.addItem("Shoes", "");&#10;
+      topNav.addItem("Bags", "");&#10;
+      topNav.spaceEqually();&#10;&#10;
+
+      topNav.changeBarColor("LightBlue");&#10;
+      topNav.changeTextFont("Verdana");&#10;
+      topNav.changeTextColor("CadetBlue");&#10;
+      topNav.changeHoverColor("PaleTurquoise");&#10;
+    </textarea></code>
+    <br/>
+    <br/>
+    <br/>
+    <h1>Code for Bottom Navigation Bar</h1>
+    <code><textarea rows="34" disabled id="textCode">
+      &#10;
+      const bottomNav = new NavigationBarGenerator();&#10;
+      bottomNav.makeBottomBar();&#10;&#10;
+  
+      bottomNav.addItem("My Account", "", "L");&#10;
+      bottomNav.addItem("New Arrivals", "", "L");&#10;
+      bottomNav.addItem("Most Popular", "", "L");&#10;
+      bottomNav.addItem("Free Shipping", "", "M");&#10;
+      bottomNav.addItem("Return Policy", "", "M");&#10;
+      bottomNav.addItem("Shopping Cart", "", "M");&#10;
+      bottomNav.addSearchField();&#10;&#10;
+  
+      bottomNav.changeBarColor("MistyRose");&#10;
+      bottomNav.changeTextFont("Tahoma");&#10;
+      bottomNav.changeTextColor("Tomato");&#10;
+      bottomNav.changeHoverColor("PeachPuff");&#10;
+    </textarea></code>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+ </body>
+</html>

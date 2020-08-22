@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>Vertical Bars Examples</title>
+    <script defer type="text/javascript" src="libary/NavigationBarGenerator.js"></script>
+    <script defer type="text/javascript" src="vertical.js"></script>
+    <link rel="stylesheet" type="text/css" href="libary/NavigationBarGenerator.css">
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+ </head>
+ <body>
+   
+  <div id="content">
+    <h3><a href="./index.html">&lt Back To Landing Page</a></h2>
+    <br/>
+    <h1>Code for Left Navigation Bar</h1>
+    <code><textarea rows="33" disabled id="textCode">
+      &#10;
+      const leftBar = new NavigationBarGenerator();&#10;
+      leftBar.makeLeftBar();&#10;&#10;
+  
+      leftBar.addItem("Btn01", "", "L");&#10;
+      leftBar.addItem("Btn02", "", "L");&#10;
+      leftBar.addItem("Btn03", "", "L");&#10;&#10;
+  
+      leftBar.addItem("Btn11", "", "M");&#10;
+      leftBar.addItem("Btn12", "", "M");&#10;
+      leftBar.addItem("Btn13", "", "M");&#10;&#10;
+  
+      leftBar.addItem("Btn21", "", "R");&#10;
+      leftBar.addItem("Btn22", "", "R");&#10;
+      leftBar.addItem("Btn23", "", "R");&#10;
+    </textarea></code>
+    <br/>
+    <br/>
+    <br/>
+    <h1>Code for Right Navigation Bar</h1>
+    <code><textarea rows="20" disabled id="textCode">
+      &#10;
+      const rightBar = new NavigationBarGenerator();&#10;
+      rightBar.makeRightBar();&#10;&#10;
+  
+      rightBar.addItem("Btn1", "", "");&#10;
+      rightBar.addItem("Btn2", "", "");&#10;
+      rightBar.addItem("Btn3", "", "");&#10;&#10;
+      rightBar.spaceEqually();&#10;
+    </textarea></code>
+    <br/>
+    <br/>
+    <br/>
+ </body>
+</html>
